@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name GameboyReader)(type KiCad)(uri ${KIPRJMOD}/GameboyReader.pretty)(options "")(descr ""))
+)
