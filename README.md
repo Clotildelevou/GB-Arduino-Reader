@@ -1,6 +1,9 @@
 # GB-Arduino-Reader
 This is a little PCB connectiong an arduino to a GBA cardtrige connector
 
+# Principles
+
+
 # 3D View
 This is currently the result of my work : 
 ![FRONT](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/3d-card-f.png)
