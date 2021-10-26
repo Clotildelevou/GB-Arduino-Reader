@@ -62,23 +62,23 @@ On enabling the Latch pin, the contents of Shift Register are copied into the se
 
 ![pinout](https://lastminuteengineers.com/wp-content/uploads/arduino/Pinout-74HC595-Shift-Register.png)
 
-GND should be connected to the ground of Arduino.
+**GND** should be connected to the ground of Arduino.
 
-VCC is the power supply for 74HC595 shift register which we connect the 5V pin on the Arduino.
+**VCC** is the power supply for 74HC595 shift register which we connect the 5V pin on the Arduino.
 
-SER (Serial Input) pin is used to feed data into the shift register a bit at a time.
+**SER** (Serial Input) pin is used to feed data into the shift register a bit at a time.
 
-SRCLK (Shift Register Clock) is the clock for the shift register. The 595 is clock-driven on the rising edge. This means that in order to shift bits into the shift register, the clock must be HIGH. And bits are transferred in on the rising edge of the clock.
+**SRCLK** (Shift Register Clock) is the clock for the shift register. The 595 is clock-driven on the rising edge. This means that in order to shift bits into the shift register, the clock must be HIGH. And bits are transferred in on the rising edge of the clock.
 
-RCLK (Register Clock / Latch) is a very important pin. When driven HIGH, the contents of Shift Register are copied into the Storage/Latch Register; which ultimately shows up at the output. So the latch pin can be seen as like the final step in the process to seeing our results at the output, which in this case are LEDs.
+**RCLK** (Register Clock / Latch) is a very important pin. When driven HIGH, the contents of Shift Register are copied into the Storage/Latch Register; which ultimately shows up at the output. So the latch pin can be seen as like the final step in the process to seeing our results at the output, which in this case are LEDs.
 
-SRCLR (Shift Register Clear) pin allows us to reset the entire Shift Register, making all its bits 0, at once. This is a negative logic pin, so to perform this reset; we need to set the SRCLR pin LOW. When no reset is required, this pin should be HIGH.
+**SRCLR** (Shift Register Clear) pin allows us to reset the entire Shift Register, making all its bits 0, at once. This is a negative logic pin, so to perform this reset; we need to set the SRCLR pin LOW. When no reset is required, this pin should be HIGH.
 
-OE (Output Enable) is negative logic too: When the voltage on it is HIGH, the output pins are disabled/set to high impedance state and don’t allow current to flow. When OE gets low voltage, the output pins work normally.
+**OE** (Output Enable) is negative logic too: When the voltage on it is HIGH, the output pins are disabled/set to high impedance state and don’t allow current to flow. When OE gets low voltage, the output pins work normally.
 
-QA–QH (Output Enable) are the output pins and should be connected to some type of output like LEDs, 7 Segments etc.
+**QA–QH** (Output Enable) are the output pins and should be connected to some type of output like LEDs, 7 Segments etc.
 
-QH’ Pin outputs bit 7 of the ShiftRegister. It is there so that we may daisychain 595s: if you connect this QH’ to the SER pin of another 595, and give both ICs the same clock signal, they will behave like a single IC with 16 outputs. Of course, this technique is not limited to two ICs – you can daisychain as many as you like, if you have enough power for all of them.
+**QH’** Pin outputs bit 7 of the ShiftRegister. It is there so that we may daisychain 595s: if you connect this QH’ to the SER pin of another 595, and give both ICs the same clock signal, they will behave like a single IC with 16 outputs. Of course, this technique is not limited to two ICs – you can daisychain as many as you like, if you have enough power for all of them.
 
 # 3D View
 This is currently the result of my work : 
