@@ -92,5 +92,6 @@ This is the gerber view :
 
 # Sources
 [Inside Gadgets](https://www.insidegadgets.com)
-[Lastminuteengeneers](https://lastminuteengineers.com/74hc595-shift-register-arduino-tutorial/)
+
+[lastminuteengineers](https://lastminuteengineers.com/74hc595-shift-register-arduino-tutorial/)
 
