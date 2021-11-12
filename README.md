@@ -90,6 +90,11 @@ This is the gerber view :
 ![TOP](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/gerber-top.png)
 ![BOTTOM](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/gerber-bottom.png)
 
+# Result
+The PCB i got looks like this :
+![FRONT](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/front-real.jpg)
+![BACK](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/back-real.jpg)
+
 # Sources
 [Inside Gadgets](https://www.insidegadgets.com)
 
