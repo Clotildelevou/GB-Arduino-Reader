@@ -94,6 +94,7 @@ This is the gerber view :
 The PCB i got looks like this :
 ![FRONT](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/front-real.jpg)
 ![BACK](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/back-real.jpg)
+![SOLDERED](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/PCB-soude.jpg)
 
 # Sources
 [Inside Gadgets](https://www.insidegadgets.com)
