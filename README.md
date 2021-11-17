@@ -91,10 +91,20 @@ This is the gerber view :
 ![BOTTOM](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/gerber-bottom.png)
 
 # Result
+
+## Pictures
 The PCB i got looks like this :
 ![FRONT](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/front-real.jpg)
 ![BACK](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/back-real.jpg)
 ![SOLDERED](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/PCB-soude.jpg)
+
+## Problems on the PCB
+
+I had a little problem on the card. The GBA pads were a bit hidden the pins of the cartdrigde reader. To solve this problem I just removed the little plastic guides (see image below) with a plier and i glued it directly on the PCB. It is quite solid but i'll change the guides position for the next version !
+
+
+![GUIDES](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/cardridge-reader.jpg)
+
 
 # Sources
 [Inside Gadgets](https://www.insidegadgets.com)
