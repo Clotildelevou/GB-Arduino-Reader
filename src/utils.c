@@ -1,6 +1,6 @@
 #include "utils.h"
 
-speed_t get_baudrate(int baudrate)
+speed_t get_baud(int baudrate)
 {
     switch(baudrate)
     {
@@ -16,8 +16,6 @@ speed_t get_baudrate(int baudrate)
             return B150;
         case 200:
             return B200;
-        case 250:
-            return B250;
         case 300:
             return B300;
         case 600:
@@ -32,18 +30,8 @@ speed_t get_baudrate(int baudrate)
             return B9600;
         case 19200:
             return B19200;
-        case 28800:
-            return B28800;
-        case 38400:
-            return B38400;
         case 57600:
             return B57600;
-        case 76800:
-            return B76800;
-        case 115200:
-            return B115200;
-        case 230400:
-            return B230400;
         case 460800:
             return B460800;
         case 576000:
