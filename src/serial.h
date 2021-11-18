@@ -23,6 +23,5 @@ int port_write(int fd, const char *buf, size_t buf_size);
 int port_read_until(int fd,  char *buf, char delim, size_t buf_size);
 int port_read(int fd, char *buf, size_t buf_size);
 int port_flush(int fd);
-int port_n_flush(int fd, size_t count);
 
 #endif

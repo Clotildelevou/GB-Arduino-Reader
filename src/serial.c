@@ -96,10 +96,10 @@ int port_read(int fd, char *buf, size_t buf_size)
 
 int port_flush(int fd)
 {
-    return 0;
-}
-
-int port_n_flush(int fd, size_t count)
-{
-    return 0;
+    sleep(1); //For high latency apps, we must wait a little
+    if (tcflush(fd, TCIOFLUSH) == -1)
+    {
+        fprintf(stderr, "Error from tcflush %s\n", strerror(errno));
+        return -1;
+    }
 }
