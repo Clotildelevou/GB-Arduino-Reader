@@ -74,11 +74,6 @@ int port_read_until(int fd,  char *buf, char delim, size_t buf_size)
     return 0;
 }
 
-int port_n_read(int fd, char *buf, size_t count, size_t buf_size)
-{
-    return 0;
-}
-
 int port_read(int fd, char *buf, size_t buf_size)
 {
     return 0;
