@@ -13,7 +13,7 @@ int port_init(const char *serial_port, int baudrate)
     
     if(tcgetattr(fd, &tty) == -1)
     {
-        fprintf(stderr, "Error %d from tcgetattr\n", strerror(errno));
+        fprintf(stderr, "Error %s from tcgetattr\n", strerror(errno));
         return -1;
     }
     
@@ -53,7 +53,7 @@ int port_write_byte(int fd, uint8_t byte)
 {
     if (write(fd, &byte, 1) == -1)
     {
-        fprintf(stderr, "Error from write %d\n", strerror(errno));
+        fprintf(stderr, "Error from write %s\n", strerror(errno));
         return -1;
     }
     return 0;
@@ -63,7 +63,7 @@ int port_write(int fd, const char *buf, size_t buf_size)
 {
     if (write(fd, &buf, buf_size) == -1)
     {
-        fprintf(stderr, "Error from write %d\n", strerror(errno));
+        fprintf(stderr, "Error from write %s\n", strerror(errno));
         return -1;
     }
     return 0;
