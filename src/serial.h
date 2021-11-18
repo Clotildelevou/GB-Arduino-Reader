@@ -1,5 +1,5 @@
-#ifndef RS232_H
-#define RS232_H
+#ifndef SERIAL_H
+#define SERIAL_H
 
 #include "utils.h"
 
