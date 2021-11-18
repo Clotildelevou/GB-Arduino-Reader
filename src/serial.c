@@ -71,11 +71,26 @@ int port_write(int fd, const char *buf, size_t buf_size)
 
 int port_read_until(int fd,  char *buf, char delim, size_t buf_size)
 {
+    port_read(fd, buf, buf_size);
+    char *end = strchr(buf, delim); //Find delim
+    size_t offset = buf - end;
+    
+    buf[offset + 1] = '\0'; //Ends the buffer after the delim
+    if (lseek(fd, offset, SEEK_SET) == -1) //Sets the file offset to delim
+    {
+        fprintf(stderr, "Error from lseek %s\n", strerror(errno));
+        return -1;
+    }
     return 0;
 }
 
 int port_read(int fd, char *buf, size_t buf_size)
 {
+    if (read(fd, &buf, buf_size) == -1)
+    {
+        fprintf(stderr, "Error on read %s\n", strerror(errno));
+        return -1;
+    }
     return 0;
 }
 
