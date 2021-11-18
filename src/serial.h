@@ -19,9 +19,8 @@
 int port_init(const char *serial_port, int baudrate);
 int port_close(int fd);
 int port_write_byte(int fd, uint8_t byte);
-int port_write(int fd, const char *str);
+int port_write(int fd, const char *buf, size_t buf_size);
 int port_read_until(int fd,  char *buf, char delim, size_t buf_size);
-int port_n_read(int fd, char *buf, size_t count, size_t buf_size);
 int port_read(int fd, char *buf, size_t buf_size);
 int port_flush(int fd);
 int port_n_flush(int fd, size_t count);

@@ -51,11 +51,21 @@ int port_close(int fd)
 
 int port_write_byte(int fd, uint8_t byte)
 {
+    if (write(fd, &byte, 1) == -1)
+    {
+        fprintf(stderr, "Error from write %d\n", strerror(errno));
+        return -1;
+    }
     return 0;
 }
 
-int port_write(int fd, const char *str)
+int port_write(int fd, const char *buf, size_t buf_size)
 {
+    if (write(fd, &buf, buf_size) == -1)
+    {
+        fprintf(stderr, "Error from write %d\n", strerror(errno));
+        return -1;
+    }
     return 0;
 }
 
