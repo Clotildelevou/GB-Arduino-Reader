@@ -13,7 +13,7 @@ int port_init(const char *serial_port, int baudrate)
     
     if(tcgetattr(fd, &tty) == -1)
     {
-        fprintf(stderr, "Error %d from tcgetattr\n");
+        fprintf(stderr, "Error %d from tcgetattr\n", strerror(errno));
         return -1;
     }
     
