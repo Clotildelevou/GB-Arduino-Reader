@@ -1,5 +1,22 @@
 # GB-Arduino-Reader
-This is a little PCB connecting an arduino to a GBA cardtrige connector
+This is a little PCB connecting an arduino to a GBA cardtrige connector. The final aim of this project is to dump the cartdrige's ROM and enevtually write on the RAM. 
+
+# Progress
+
+**Hardware :**
+
+▰▰▰▰▰▰▰▰▰▰ 100%
+> The PCB first version exists and is functionnal. A wild second version may appear !
+
+**Microcontroller's code :**
+
+▰▱▱▱▱▱▱▱▱▱ 10%
+> A POC exists and it is actually possible to fetch some code !
+
+**Executor code :**
+
+▰▰▰▰▰▰▰▰▰▱ 90%
+> The ROM dumper is ready ! Different types of MBC are not supported yet tho
 
 # Principles
 
