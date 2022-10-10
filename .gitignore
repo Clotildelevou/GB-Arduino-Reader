@@ -11,6 +11,7 @@
 *.sch-bak
 *~
 _autosave-*
+*.zip
 *.tmp
 *-save.pro
 *-save.kicad_pcb
