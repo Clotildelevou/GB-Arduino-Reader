@@ -1,7 +1,12 @@
 #include "uart_hal.h"
 
-void uart_init(uint16_t baudrate)
+#define F_CPU 16000000
+
 {
+
+void uart_init(uint32_t baudrate)
+{
+  baudrate = F_CPU / (16 * baudrate) - 1;
   //Set baudrate
   UBRR0H = (baudrate & 0x0F00) >> 8;
   UBRR0L = baudrate & 0x00FF;
