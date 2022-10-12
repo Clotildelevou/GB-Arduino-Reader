@@ -1,6 +1,8 @@
-#include "serial.h"
+#include "uart_hal.h"
 
 int main(void)
 {
-    return 0;
+  uart_init(57600);
+  uart_send_byte('a');
+  return 0;
 }
