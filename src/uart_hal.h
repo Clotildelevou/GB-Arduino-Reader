@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <avr/io.h>
+#include <avr/interrupt.h>
 
 void uart_init(uint32_t baudrate);
 void uart_send_byte(uint8_t c);

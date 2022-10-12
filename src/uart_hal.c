@@ -2,7 +2,10 @@
 
 #define F_CPU 16000000
 
+ISR(USART_TX_vect)
 {
+
+}
 
 void uart_init(uint32_t baudrate)
 {
