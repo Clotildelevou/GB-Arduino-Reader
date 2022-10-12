@@ -16,4 +16,13 @@ void uart_send_byte(uint8_t c)
   while (!(UCSR0A & (1 << UDRE0)));
   UDR0 = c;
 }
+
+void uart_send_buffer(uint8_t *buf, uint16_t len)
+{
+  for(int i = 0; i < len; i++)
+  {
+    uart_send_byte(buf[i]);
+  }
+}
+
 }
