@@ -11,4 +11,9 @@ void uart_init(uint16_t baudrate)
 
 }
 
+void uart_send_byte(uint8_t c)
+{
+  while (!(UCSR0A & (1 << UDRE0)));
+  UDR0 = c;
+}
 }
