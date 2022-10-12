@@ -1,19 +1,17 @@
-OBJS	= src/serial.o src/utils.o src/main.o
-SOURCE	= src/serial.c src/utils.c src/main.c
-HEADER	= src/serial.h src/utils.h
-OUT	= gb-reader
-LFLAGS	 = 
+MCU=atmega328
+F_CPU=16000000
+CC=avr-gcc
+OBJCOPY=avr-objcopy
+CFLAGS=-std=c99 -Wall -g -Os -mmcu=${MCU} -DF_CPU=${F_CPU} -I.
+TARGET=main
+SRCS= src/main.c  src/uart_hal.c
 
-all: gb-reader
+all:
+	${CC} ${CFLAGS} -o ${TARGET}.bin ${SRCS}
+	${OBJCOPY} -j .text -j .data -O ihex ${TARGET}.bin ${TARGET}.hex
 
-gb-reader: $(OBJS)
-	$(CC) -o $@ $^ $(LFLAGS)
-
-%.o: %.c $(HEADER)
-	$(CC) -c -o $@ $< $(LFLAGS)
+flash:
+	avrdude -p ${MCU} -c usbasp -U flash:w:${TARGET}.hex:i -F -P usb
 
 clean:
-	rm -f $(OBJS) $(OUT)
-
-run: $(OUT)
-	./$(OUT)
+	rm -f *.bin *.hex
