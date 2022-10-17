@@ -2,10 +2,7 @@
 
 #define F_CPU 16000000
 
-ISR(USART_TX_vect)
-{
 
-}
 
 void uart_init(uint32_t baudrate)
 {
@@ -40,4 +37,10 @@ void uart_send_string(uint8_t *str)
     uart_send_byte(*str);
     str++;
   }
+
+
+ISR(USART_TX_vect)
+{
+
+}
 }
