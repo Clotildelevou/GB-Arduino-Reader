@@ -47,6 +47,11 @@ ISR(USART_TX_vect)
 
 }
 
+uint8_t uart_recv_byte()
+{
+    while (! (UCSR0A & (1 << RXC0)));
+    return UDR0;
+}
 ISR(USART_RX_vect)
 {
     volatile static uint16_t offset = 0;
