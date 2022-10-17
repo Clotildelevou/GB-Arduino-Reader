@@ -46,4 +46,14 @@ ISR(USART_TX_vect)
 {
 
 }
+
+ISR(USART_RX_vect)
+{
+    volatile static uint16_t offset = 0;
+    rx_buf[offset] =  uart_recv_byte();
+    rx_count++;
+    offset++;
+    if(offset >= RX_BUF_SIZE){
+        offset = 0;
+    }
 }
