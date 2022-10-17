@@ -28,3 +28,7 @@ fp-info-cache
 *.xml
 *.csv
 .idea
+
+# avr-gcc files
+*.bin
+*.hex
