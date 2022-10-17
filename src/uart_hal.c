@@ -52,6 +52,21 @@ uint8_t uart_recv_byte()
     while (! (UCSR0A & (1 << RXC0)));
     return UDR0;
 }
+
+uint16_t uart_read()
+{
+    static uint16_t rx_read_pos = 0;
+    uint8_t data = 0;
+
+    data = rx_buf[rx_read_pos];
+    rx_read_pos++;
+    rx_count--;
+    if(rx_read_pos >= RX_BUF_SIZE)
+        rx_read_pos = 0;
+    return data;
+}
+
+
 ISR(USART_RX_vect)
 {
     volatile static uint16_t offset = 0;

@@ -14,4 +14,5 @@ void uart_send_buffer(uint8_t *buf, uint16_t len);
 void uart_send_string(uint8_t *str);
 
 uint8_t uart_recv_byte();
+uint16_t uart_readline(uint8_t *buf);
 #endif
