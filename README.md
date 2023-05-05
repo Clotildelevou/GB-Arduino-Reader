@@ -99,21 +99,21 @@ On enabling the Latch pin, the contents of Shift Register are copied into the se
 
 # 3D View
 This is currently the result of my work : 
-![FRONT](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/3d-card-f.png)
-![BACK](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/3d-card-b.png)
+![FRONT](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/media/3d-card-f.png)
+![BACK](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/media/3d-card-b.png)
 
 # Gerber view
 This is the gerber view :
-![TOP](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/gerber-top.png)
-![BOTTOM](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/gerber-bottom.png)
+![TOP](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/media/gerber-top.png)
+![BOTTOM](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/media/gerber-bottom.png)
 
 # Result
 
 ## Pictures
 The PCB i got looks like this :
-![FRONT](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/front-real.jpg)
-![BACK](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/back-real.jpg)
-![SOLDERED](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/img/PCB-soude.jpg)
+![FRONT](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/media/front-real.jpg)
+![BACK](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/media/back-real.jpg)
+![SOLDERED](https://github.com/Clotildelevou/GB-Arduino-Reader/blob/main/media/PCB-soude.jpg)
 
 ## Problems on the PCB
 
